@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Admin Panel!</title>
+  </head>
+  <body>
+    
+    
+    <!-- nav bar-->
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Deshboard</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#components">Component</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Page
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="register.html">Register</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Forget Password</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Chart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="table.html">Table</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://media.istockphoto.com/photos/office-responsive-devices-web-design-website-picture-id1201166649" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Web Devlopment</h5>
+                  </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://cdn.pixabay.com/photo/2018/12/06/10/43/algorithm-3859536_1280.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Data Science</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://media.istockphoto.com/photos/backend-project-architecture-development-database-development-picture-id1188511715" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Database</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+      <div>
+          <p style="text-align: center; font-size: xx-large;">Deshboard</p>
+          <div class="row">
+            <div class="col-sm-6">
+                <div class="card text-white bg-dark mb-3">
+                  <div class="card-body">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                          Earnings (Monthly)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">$80,000</div>
+                      <div class="col-auto">
+                          <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card text-white bg-dark mb-3">
+                <div class="card-body">
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                        Earnings (ANNUAL)</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">$670,000</div>
+                    <div class="col-auto">
+                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card text-white bg-success mb-3">
+                      <div class="card-body">
+                          <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
+                              Projects</div>
+                          <div class="h5 mb-0 font-weight-bold text-dark-800">120</div>
+                          <div class="col-auto">
+                              <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card text-white bg-success mb-3">
+                      <div class="card-body">
+                          <div class="text-xs font-weight-bold text-drak text-uppercase mb-1">
+                              Client</div>
+                          <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
+                          <div class="col-auto">
+                              <i class="fas fa-calendar fa-2x text-drak-300">100</i>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+      </div>
+      <div style="text-align: center;">
+        <div class="row">
+
+            <!-- Content Column -->
+            <div class="col-lg-6 mb-4" style="margin: auto;">  
+    
+                <!-- Project Card Example -->
+                <div id="components" class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Technology</h6>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="small font-weight-bold">Web Devlopment <span class="float-right">40%</span></h4>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h4 class="small font-weight-bold">C++ <span class="float-right">30%</span></h4>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h4 class="small font-weight-bold">Database <span class="float-right">60%</span></h4>
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h4 class="small font-weight-bold">Full Stack<span class="float-right">80%</span></h4>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h4 class="small font-weight-bold">Python<span class="float-right">99%</span></h4>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+    
+    </div>
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2021 Copyright:
+          <a class="text-dark" href="https://mdbootstrap.com/">sujaysatyam.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    
+        
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
